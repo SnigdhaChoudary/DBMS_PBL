@@ -157,7 +157,6 @@ All queries use placeholders, so user input never becomes part of the SQL text (
 | Stored procedures | 5 (`sp_allocate_slot`, `sp_vehicle_entry`, `sp_vehicle_exit`, `sp_make_payment`, `sp_expire_reservations`) |
 | Views | 9 (occupancy, free slots, duration, peak hours, pass usage, violations, bill details, daily revenue, slot location) |
 
-Full 3NF argument, functional dependencies and the data dictionary: [`docs/normalization_and_data_dictionary.md`](docs/normalization_and_data_dictionary.md)
 
 ### Billing method
 
@@ -285,7 +284,6 @@ Try these to see the rules at work:
 - Add a customer with phone `12345`. It is refused with a clear message.
 - Delete customer 1. It is refused because they still own vehicles.
 
-Full guide: [`docs/user_guide.md`](docs/user_guide.md)
 
 ---
 
@@ -313,15 +311,6 @@ mysql -u root -p -f smart_parking < sql\05_constraint_tests.sql   # 20 statement
 
 ---
 
-## 🎓 Presentations, Report and Video
-
-| Item | Link |
-|---|---|
-| Review 2 slides | [`presentations/Smart_Parking_DBMS_Review2.pptx`](presentations/Smart_Parking_DBMS_Review2.pptx) |
-| Review 3 slides | [`presentations/Smart_Parking_DBMS_Review3.pptx`](presentations/Smart_Parking_DBMS_Review3.pptx) |
-| Project report | [`docs/Project_Report.pdf`](docs/Project_Report.pdf) |
-| Viva preparation | [`docs/viva_questions.md`](docs/viva_questions.md) |
-| Demo video | 🎥 [Watch on YouTube / Drive](https://your-video-link-here) |
 
 ---
 
