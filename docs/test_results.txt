@@ -1,0 +1,7 @@
+../mnt/user-data/outputs/smart_parking_project/app/db.py:55: DeprecationWarning: Call to deprecated function stored_results. Reason: The property counterpart 'stored_results' will be added in a future release, and this method will be removed.
+  for res in (stored() if callable(stored) else stored):
+.....................
+----------------------------------------------------------------------
+Ran 23 tests in 0.664s
+
+OK

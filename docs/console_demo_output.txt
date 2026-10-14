@@ -1,0 +1,43 @@
+
+=== 1. Dashboard
+  {'open_sessions': '5', 'free_slots': '47', 'occupied_slots': '5', 'unpaid_balance': '870.00', 'violations': '16'}
+
+=== 2. Slot search: free car slots in Lakeview Mall Parking
+  22 free; first three: [(-1, 'B1-CAR', 'C01'), (-1, 'B1-CAR', 'C02'), (-1, 'B1-CAR', 'C03')]
+
+=== 3. Gate entry and slot allocation
+  OK    enter MH12AB3030 (car)
+  allotted: floor -1, zone B1-CAR, slot C01
+  BLOCKED  enter MH12AB3030 again -> This vehicle is already parked inside.
+  BLOCKED  enter an unregistered vehicle -> No vehicle with that registration number. Add it on the Vehicles tab first.
+  BLOCKED  enter with a badly typed number -> Registration number must look like TS09EA1234 (2 letters, 2 digits, 1 to 3 letters, 4 digits).
+
+=== 4. Gate exit, duration billing (demo stay of 200 minutes)
+  bill #64: 200 min at Rs 30.00/h = Rs 120.00 (UNPAID)
+
+=== 5. Payments
+  paid 50 by UPI -> PARTIAL, balance 70.00
+  BLOCKED  pay 500 on a balance of 70 -> Payment exceeds the outstanding bill amount.
+  paid 70 in cash -> PAID
+
+=== 6. Pass holder (TS09EA1234 has an active monthly pass)
+  pass #1 applied, bill Rs 0.00 (PAID)
+
+=== 7. Reservation
+  OK    reserve for TS08GH7788 tomorrow 10:00-12:00
+  slot C01, floor -1, reservation #8
+  BLOCKED  reserve in the past -> Start time cannot be in the past.
+  reservation cancelled
+
+=== 8. Customer CRUD and validation
+  created customer #13
+  BLOCKED  duplicate phone -> A customer with this phone number already exists.
+  BLOCKED  invalid phone -> Phone must be a 10-digit mobile number starting with 6, 7, 8 or 9.
+  updated to: Demo Renamed
+  deleted
+  BLOCKED  delete a customer who owns vehicles -> Cannot delete: this record is still used by pass records.
+
+=== 9. Reports
+  Occupancy by floor: 5 row(s); first: {'facility': 'Lakeview Mall Parking', 'floor_no': -1, 'total_slots': 16, 'occupied': Decimal('2')}
+  Violations: 16 row(s); first: {'violation': 'BILL_UNPAID_OVER_24H', 'session_id': 4, 'reg_number': 'TS12RS1111', 'detail': 'Rs 62.50 outstanding'}
+  Revenue by facility: 2 row(s); first: {'facility': 'Lakeview Mall Parking', 'bills': 34, 'billed': Decimal('2495.00'), 'collected': Decimal('2062.50')}
