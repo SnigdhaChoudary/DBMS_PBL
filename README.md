@@ -350,7 +350,7 @@ mysql -u root -p -f smart_parking < sql\05_constraint_tests.sql   # 20 statement
 
 ## 👤 Author
 
-**D.SNIGDHA CHOUDARY**
+**D. SNIGDHA CHOUDARY**
 
 
 ---
