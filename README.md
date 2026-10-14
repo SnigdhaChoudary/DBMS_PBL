@@ -93,7 +93,6 @@ The important business rules are enforced **inside MySQL**, so no program or use
   </tr>
   <tr>
     <td align="center"><img src="screenshots/08_error_invalid_phone.png" width="100%"><br><b>Validation: invalid phone</b></td>
-    <td align="center"><img src="screenshots/zoom150_dashboard.png" width="100%"><br><b>Dashboard at 150% zoom</b></td>
   </tr>
 </table>
 
