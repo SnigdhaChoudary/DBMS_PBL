@@ -31,10 +31,9 @@
 8. [Getting Started](#-getting-started)
 9. [Using the Application](#-using-the-application)
 10. [Testing](#-testing)
-11. [Presentations, Report and Video](#-presentations-report-and-video)
-12. [Troubleshooting](#-troubleshooting)
-13. [Future Scope](#-future-scope)
-14. [Author](#-author)
+11. [Troubleshooting](#-troubleshooting)
+12. [Future Scope](#-future-scope)
+13. [Author](#-author)
 
 ---
 
